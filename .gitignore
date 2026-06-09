@@ -1,6 +1,54 @@
+# === Project-Specific Planning & Credentials ===
+1plan/
 node_modules/
-.env
 dist/
 build/
-1plan/
+.env
+.env.*
+!*.example
 
+# === Android Security & Credentials ===
+# Do NOT commit signing keys, keystores, or build secrets
+**/android/local.properties
+**/android/key.properties
+**/*.keystore
+**/*.jks
+**/google-services.json
+
+# === iOS Security & Credentials ===
+**/ios/Flutter/ephemeral/
+**/ios/Flutter/flutter_export_environment.sh
+**/ios/Flutter/Generated.xcconfig
+**/ios/Flutter/Flutter.podspec
+**/ios/Flutter/Flutter.framework
+**/ios/Flutter/App.framework
+**/ios/Runner/GeneratedPluginRegistrant.*
+**/ios/Runner/GoogleService-Info.plist
+
+# === Flutter & Dart Build Cache ===
+.dart_tool/
+.packages
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+/build/
+
+# === IDEs & Text Editors ===
+# Android Studio / IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Visual Studio Code
+.vscode/
+
+# === OS & System Junk Files ===
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+ehthumbs.db
+
+# === Debug & Log Files ===
+*.log
